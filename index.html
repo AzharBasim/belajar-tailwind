@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/tailwind.css">
+    <title>Rentever</title>
+</head>
+<body>
+        <div class="container mx-auto px-16">
+                    <nav class="flex items-center justify-between mt-20 sm:p-5 sm:bg-yellow-450 lg:bg-white">
+                        <div class="sm:hidden lg:flex items-center">
+                            <a class="font-ikon text-gray-800 font-bold" href="#">Rentever</a>
+                        </div>
+                        <!-- burger -->
+                    	<div class="block lg:hidden">
+                            <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-white">
+                                <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                            </button>
+                        </div>
+                        <!-- end burger -->
+                        <!-- nav -->
+                            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden pt-2 lg:pt-0" id="nav-content">
+                                <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                                    <li>
+                                        <a class="inline-block text-gray-800 font-medium hover:text-gray-200 sm:ml-12 lg:ml-24" href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a class="inline-block ml-12 text-gray-800 font-medium hover:text-gray-200" href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a class="inline-block ml-12 text-gray-800 font-medium hover:text-gray-200" href="#">Locations</a>
+                                    </li>
+                                    <li>
+                                        <a class="inline-block ml-12 mb-3 lg:mb-0 text-gray-800 font-medium hover:text-gray-200" href="#">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a class=" text-white lg:bg-yellow-450 py-2 px-5 rounded-md text-sm hover:bg-yellow-400 font-semibold sm:bg-yellow-500 sm:ml-12 lg:ml-24 href="#">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </nav>
+                        <!-- end nav -->
+
+                <section class="flex mt-32">
+                    <div class="container mx-auto p-5" >
+                            <p class=" text-sm text-gray-800 font-medium font-badan">Find your dreams house</p>
+                            <p class="sm:text-4xl lg:text-6xl text-gray-800 font-semibold font-badan mb-7">Rent a house today, <br>
+                                made easy!</p><br>
+                            <div class="sm:-ml-8 lg:w-max lg:block ">
+                                <a class="text-sm text-yellow-450 py-2 px-8 hover:text-white hover:bg-yellow-400">Rent</a>
+                                <a class="text-sm text-white rounded bg-yellow-450 py-2 px-8 hover:bg-yellow-400">Buy</a>
+                                <a class="text-sm text-white rounded bg-yellow-450 py-2 px-8 -ml-3 hover:bg-yellow-400">Sell</a>
+                            </div>
+                    </div>
+                        <div>
+                            <img class="object-center w-auto sm:object-bottom sm:-mt-16 lg:max-w-md lg:-mt-12" src="public/img/rumah.jpg" alt="" >
+                        </div>
+                </section>
+    </div>
+    <script>
+		//Javascript to toggle the menu
+		document.getElementById('nav-toggle').onclick = function(){
+			document.getElementById("nav-content").classList.toggle("hidden");
+		}
+	</script>
+
+</body>
+</html>
